@@ -10,7 +10,7 @@ body{
 }
 
 #heroImage {
-    background-image: url(/resources/whetherHeroImage.png);
+    background-image: url(/mddn352-experiment/resources/whetherHeroImage.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +22,7 @@ body{
 }
 
 #heroLogo {
-    background-image: url(/resources/logo-03.png);
+    background-image: url(/mddn352-experiment/resources/logo-03.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
