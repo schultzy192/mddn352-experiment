@@ -1,3 +1,137 @@
-h3 {
-  font-family: sans-serif;
-  }
+/*Woo css*/
+/* PERSISTENT STYLING */
+
+body{
+	font-family: sans-serif;
+}
+
+#eww-ie-alert {
+    display: none;
+}
+
+#heroImage {
+    background-image: url(/resources/whetherHeroImage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -0.6em;
+    margin-top: -0.6em;
+    height: 55em;
+    width: 105%;
+    z-index: -10;
+}
+
+#heroLogo {
+    background-image: url(/resources/logo-03.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#welcome {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 32pt;
+    line-height: 1em;
+    padding-bottom: 1em;
+}
+
+#welcomeSection > p {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16pt;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: -1em;
+}
+
+/* DESKTOP SPECIFIC STYLING */
+
+#mob-only-div {
+    display: none;
+}
+
+#heroLogo {
+    width: 40.95em;
+    height: 15em;
+    position: absolute;
+    margin-left: 50%;
+    left: -20.475em;
+    margin-top: 20em;
+}
+
+/* MOBILE & TABLET SPECIFIC STYLING*/
+
+@media all and (max-width: 800px) {
+    body{
+        background-color:dodgerblue;
+        color: aliceblue;
+    }
+    
+    #welcome{
+        text-align: center;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    
+    #heroImage {
+        width: 105%;
+        height: 35em;
+    }
+    
+    #heroLogo {
+        width: 75%;
+        height: 27.48%;
+        left: -37.5%;
+        margin-top: 13em;
+    }
+    
+    #mob-only-div {
+        display: block;
+    }
+    
+    #mob-only-div > h3 {
+        color:black;
+        text-align: center;
+        padding-top: 0.7em;
+    }
+}
+
+/* IE UPGRADE MESSAGE */
+
+@media \0screen\,screen\9 {
+    #eww-ie-alert {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 800px;
+        top: 0px;
+        left: 0px;
+        z-index: 1000;
+        
+        background-color: dimgray;
+        font-family: sans-serif;
+        color: #ccc;
+    }
+
+    #eww-ie-alert > h2 {
+        margin-left: 10%;
+        margin-top: 20%;
+        font-size: 24pt;
+    }
+
+    #eww-ie-alert > p {
+        margin-left: 10%;
+        width: 75%;
+        font-size: 14pt;
+    }
+}
+
+/* IGNORE EDGE & WEBKIT etc. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #eww.ie.alert {
+        display: none;
+    }
+}
