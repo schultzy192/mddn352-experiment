@@ -40,6 +40,7 @@ body{
 #welcomeSection > p {
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
+    color: dodgerblue;
     font-weight: 300;
     font-size: 16pt;
     margin-left: 2em;
